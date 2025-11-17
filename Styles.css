@@ -12,7 +12,7 @@
   --glass-border: rgba(255,255,255,0.06);
 }
 
-/* Reset + base */
+
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -28,7 +28,7 @@ body{
   padding:40px;
 }
 
-/* Page layout */
+
 .page{
   width:100%;
   max-width:1100px;
@@ -38,7 +38,7 @@ body{
   gap:28px;
 }
 
-/* Card */
+
 .card{
   width:var(--card-width);
   background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
@@ -51,7 +51,7 @@ body{
   overflow:hidden;
 }
 
-/* Header */
+
 .card-header{
   text-align:center;
   margin-bottom:8px;
@@ -69,7 +69,7 @@ body{
   font-size:0.9rem;
 }
 
-/* Art area */
+
 .art{
   height:220px;
   display:flex;
@@ -78,14 +78,14 @@ body{
   position:relative;
 }
 
-/* Balloons */
+
 .balloons{
   position:absolute;
   inset:0;
   pointer-events:none;
 }
 
-/* Wish star button */
+
 .wish-btn{
   position:relative;
   z-index:6;
@@ -210,12 +210,11 @@ body{
   transform: rotate(-18deg);
 }
 
-/* Different balloon colors */
+
 .balloon.blue{ background: linear-gradient(180deg,var(--light-blue),var(--mid-blue)); }
 .balloon.navy{ background: linear-gradient(180deg,var(--mid-blue),var(--dark-blue)); }
 .balloon.whiteish{ background: linear-gradient(180deg,rgba(255,255,255,0.95), rgba(255,255,255,0.84)); color:var(--dark-blue); }
 
-/* float animation settings use CSS variable --duration set inline by JS */
 @keyframes floatUp {
   0% { transform: translateY(0) rotate(-6deg); opacity:0; }
   6% { opacity:1; }
@@ -223,8 +222,9 @@ body{
   100% { transform: translateY(-220px) rotate(-4deg); opacity:0; }
 }
 
-/* small responsiveness */
+
 @media (max-width:520px){
   :root{ --card-width: 92vw; }
   .art{ height:180px; }
 }
+
